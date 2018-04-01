@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jlbeauty.read">
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".main.ReadApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="XZGJF" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="1111111111111" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.MyAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--首页-->
+        <activity
+            android:name=".activity.home.MainActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--文章详情页面-->
+        <activity
+            android:name=".activity.home.ArticleDetailsActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--引导页面-->
+        <activity
+            android:name=".activity.GuideActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--公告页面-->
+        <activity
+            android:name=".activity.home.NoticeListActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--文章列表-->
+        <activity
+            android:name=".activity.home.ArticleListActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--活动列表-->
+        <activity
+            android:name=".activity.home.MoreLatestActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--登陆-->
+        <activity
+            android:name=".activity.userCenter.LoginActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--注册-->
+        <activity
+            android:name=".activity.userCenter.RegisterActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--注册-->
+        <activity
+            android:name=".activity.userCenter.RegisterMessageCodeActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--邮箱-->
+        <activity
+            android:name=".activity.userCenter.EmailActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--忘记登陆密码-->
+        <activity
+            android:name=".activity.userCenter.ForgetLoginPassActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--重新绑定邮箱-->
+        <activity
+            android:name=".activity.userCenter.ReBindEmailActivity"
+            android:theme="@style/ActivityTheme"></activity>
+
+        <!--重置密码-->
+        <activity
+            android:name=".activity.userCenter.ResetPasswordActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--修改交易密码-->
+        <activity
+            android:name=".activity.userCenter.UpdateLoginPassActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--修改新手机号-->
+        <activity
+            android:name=".activity.userCenter.UpdateNewPhoneActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--修改旧手机号-->
+        <activity
+            android:name=".activity.userCenter.UpdateOldPhoneActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--修改成功-->
+        <activity
+            android:name=".activity.userCenter.UpdateSuccessActivity"
+            android:theme="@style/ActivityTheme"></activity>
+
+        <!--修改用户名-->
+        <activity
+            android:name=".activity.userCenter.UpdateNameActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--账户设置-->
+        <activity
+            android:name=".activity.userCenter.AccountSettingActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--系统设置-->
+        <activity
+            android:name=".activity.userCenter.SystemSettingsActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--邀請好友-->
+        <activity
+            android:name=".activity.userCenter.InviteFriendActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--帮助中心-->
+        <activity
+            android:name=".activity.userCenter.HelpCenterActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--邀請好友列表-->
+        <activity
+            android:name=".activity.userCenter.InviteNoteActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--会员申请-->
+        <activity
+            android:name=".activity.userCenter.VipApplyActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--意見反饋-->
+        <activity
+            android:name=".activity.userCenter.SuggestionsActivity"
+            android:theme="@style/ActivityTheme"></activity>
+
+
+        <!--积分兑换首页-->
+        <activity
+            android:name=".activity.IntegralMall.ExchangeDetailActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--积分兑换-->
+        <activity
+            android:name=".activity.IntegralMall.IntegralExchangeActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--可兑换-->
+        <activity
+            android:name=".activity.IntegralMall.IntegralConvertibleActivity"
+            android:theme="@style/ActivityTheme"></activity>
+        <!--积分任务-->
+        <activity
+            android:name=".activity.IntegralMall.MyIntegralActivity"
+            android:theme="@style/ActivityTheme"></activity>
+
+
+    </application>
+
+</manifest>

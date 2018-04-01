@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rongteng.base.weight.EditTextWithDel
+                    android:id="@+id/et_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:background="@drawable/shape_edit_text_background1"
+                    android:hint="请输入您想绑定的邮箱"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textSize="@dimen/size_sp_12" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginRight="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/shape_btn_background"
+                android:enabled="false"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="温馨提示：请输入后缀为.com的邮箱地址"
+                android:textColor="@color/text_tip_color"
+                android:textSize="@dimen/size_sp_micro" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:background="@drawable/layout_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                layout="@layout/edit_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_40"></include>
+
+            <include
+                layout="@layout/edit_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"></include>
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginRight="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_40"
+                android:background="@drawable/shape_btn_background"
+                android:enabled="false"
+                android:text="确认更换"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_15" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

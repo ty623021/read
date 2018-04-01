@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.rongteng.base.weight.EditTextWithDel
+                    android:id="@+id/et_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:background="@drawable/shape_edit_text_background"
+                    android:hint="请输入用户名"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textSize="@dimen/size_sp_12" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginRight="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/shape_btn_background"
+                android:enabled="false"
+                android:text="确认修改"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="温馨提示"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/size_sp_micro" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="为了您的账户安全，"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_sp_micro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="用户名只可修改一次。"
+                    android:textColor="@color/red_color"
+                    android:textSize="@dimen/size_sp_micro" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

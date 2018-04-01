@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:layout_marginLeft="@dimen/margin_13"
+        android:layout_marginRight="@dimen/margin_13"
+        android:background="@color/global_line_color"></View>
+
+
+    <com.rongteng.base.pullview.AbPullToRefreshView
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:childDivider="@color/global_line_color"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null">
+
+        </ExpandableListView>
+    </com.rongteng.base.pullview.AbPullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/notice_relative_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/network_disabled" />
+    </RelativeLayout>
+</RelativeLayout>

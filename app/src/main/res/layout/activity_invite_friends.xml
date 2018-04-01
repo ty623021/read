@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.rongteng.base.weight.TitleView>
+
+    <com.rongteng.base.pullview.AbPullToRefreshView
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_person_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_35"
+                            android:text="我的邀请码"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_sp_12" />
+
+                        <TextView
+                            android:id="@+id/invite_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_sp_30" />
+
+                        <TextView
+                            android:id="@+id/copys"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/margin_30"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:background="@drawable/shape_invite_copy_background"
+                            android:gravity="center"
+                            android:text="复制邀请码"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/size_sp_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_24"
+                            android:layout_marginRight="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:text="邀请好友注册时填入此号码（或者您的手机号码）他即成为您的分销用户。他的每次投资您都会收到相应的奖励。"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_sp_12" />
+
+                        <TextView
+                            android:id="@+id/reward_rules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/margin_15"
+                            android:text="奖励规则>"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_sp_12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_background"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/amount_linear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_50"
+                            android:layout_marginLeft="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/people_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/main_color"
+                                android:textSize="@dimen/size_sp_18" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_7.5"
+                                android:text="已邀请数量（人）"
+                                android:textColor="@color/gray_no_pressed" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:layout_marginTop="@dimen/margin_15"
+                            android:background="@color/gray"></View>
+
+                        <LinearLayout
+                            android:id="@+id/money_linear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_50"
+                            android:layout_marginRight="@dimen/margin_24"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/money_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/main_color"
+                                android:textSize="@dimen/size_sp_18" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_7.5"
+                                android:text="已领取佣金（元）"
+                                android:textColor="@color/gray_no_pressed" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/my_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/margin_24"
+                        android:paddingBottom="@dimen/margin_10"
+                        android:text="我的邀请>"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/size_sp_12" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_38"
+                    android:background="@drawable/shape_btn_background_radius"
+                    android:gravity="center"
+                    android:text="立即邀请"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_sp_15" />
+            </LinearLayout>
+        </ScrollView>
+    </com.rongteng.base.pullview.AbPullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/notice_relative_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/network_disabled" />
+    </RelativeLayout>
+
+
+</LinearLayout>

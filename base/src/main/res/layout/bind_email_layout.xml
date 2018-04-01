@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="激活邮件已发出"
+            android:textColor="@color/blue_text_color"
+            android:textSize="@dimen/size_sp_15" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="11111111@qq.com"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="请在24小时之内登录邮箱，按照邮箱中的提示激活邮箱"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_sp_12" />
+
+        <Button
+            android:id="@+id/dialog_bt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_30"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15"
+            android:background="@drawable/shape_btn_background_radius"
+            android:text="我知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_sp_13" />
+    </LinearLayout>
+
+
+</LinearLayout>

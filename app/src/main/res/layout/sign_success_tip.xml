@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_success_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="签到成功"
+                android:textColor="@color/button_color"
+                android:textSize="@dimen/size_sp_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/experience_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center"
+                android:text="获得积分20"
+                android:textColor="#FF5F06"
+                android:textSize="@dimen/size_sp_12" />
+
+            <GridView
+                android:id="@+id/gv1"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="@dimen/margin_45"
+                android:layout_marginRight="@dimen/margin_35"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="center"
+                android:numColumns="4"
+                android:scrollbars="none"></GridView>
+
+            <GridView
+                android:id="@+id/gv2"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_65"
+                android:layout_marginRight="@dimen/margin_50"
+                android:gravity="center"
+                android:numColumns="3"
+                android:scrollbars="none"></GridView>
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="连签7天得88元现金红包"
+                android:textColor="#FF5F06"
+                android:textSize="@dimen/size_sp_12"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/go_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_30"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@drawable/shape_btn_background_radius"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:text="已签到，赚更多"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_12"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-30dp"
+        android:layout_toRightOf="@+id/relative"
+        android:padding="@dimen/margin_10"
+        android:src="@drawable/sign_close" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.rongteng.base.weight.TitleView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/tab_layout_include" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_feedback"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_height"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_btn_bg"
+            android:text="意见反馈"
+            android:textColor="@color/blue_text_color"
+            android:textSize="@dimen/size_sp_15" />
+
+        <Button
+            android:id="@+id/service_phone"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_btn_background"
+            android:text="联系客服"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_sp_15" />
+    </LinearLayout>
+</LinearLayout>

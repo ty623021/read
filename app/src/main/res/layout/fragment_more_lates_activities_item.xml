@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_line_default"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect_ridius_white">
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="小诸葛金服"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/size_sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_activity"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/activity_title"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:layout_marginRight="@dimen/margin_left_right_12"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_banner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_activity"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:layout_marginRight="@dimen/margin_left_right_12"
+            android:layout_marginTop="@dimen/margin_8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_activity_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:text="2016-12-06-2017-06-12"
+                android:textColor="@color/text_tip_color"
+                android:textSize="@dimen/size_sp_14" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,59 @@
+<resources>
+
+    <!--首页-->
+    <string name="tab_one">首页</string>
+    <string name="tab_tow">聊天</string>
+    <string name="tab_three">视频</string>
+    <string name="tab_four">商城</string>
+    <string name="tab_five">我的</string>
+    <string name="mall_personal">个人中心</string>
+    <string name="shopping">购物车</string>
+    <string name="voice_code"><u>获取语音验证码</u></string>
+    <string name="invest_title">投资列表</string>
+    <string name="personal_center">个人中心</string>
+
+    <!--登录-->
+    <string name="login">登录</string>
+
+    <!--手势密码-->
+    <string name="set_gesture_pattern">请绘制手势密码</string>
+    <string name="set_gesture_pattern_reason">取消</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+
+    <!--安全保障-->
+    <string name="safety">资金交易安全全程有保障</string>
+    <string name="account_safety">资金交易安全全程有保障</string>
+    <string name="recharge_safety_tip">为了您的账户安全，您新绑定的银行卡将作为您移动端</string>
+
+
+    <string name="hint_pass">请输入6~16位密码</string>
+    <string name="tv_refresh"><u>请重新获取</u></string>
+    <!--用户的个人信息-->
+    <string name="et_id_card">请输入身份证号码</string>
+    <string name="et_real_name">请输入真实姓名</string>
+    <string name="et_msg_code">请输入短信验证码</string>
+    <string name="et_recharge_money">请输入充值金额，需≥1元</string>
+    <string name="tv_bank_name">点击选择银行</string>
+    <string name="tv_branch_bank_address">点击选择开户行所在地</string>
+    <string name="et_bank_card">请输入银行卡号码</string>
+    <string name="et_branch_bank_name">请输入银行卡开户行名称</string>
+    <string name="conmmit">提交</string>
+    <string name="server_tel">400-611-4589</string>
+    <string name="server_time">（工作日9:00-17:30）</string>
+
+    <string name="load_finish">没有更多数据了</string>
+    <string name="loan_project_tip">注：小诸葛金服将以客观、公正、严谨、透明的原则，最大程度地核实借入者信息的真实性，但不保证审核信息100%真实。如果借入者长期逾期，其提供的信息将被“小诸葛金服”平台公布。</string>
+
+    <!--选择账户页面 充值 提现温馨提示文案-->
+    <string name="recharge_tip_one">1、网贷账户与财富账户可以绑定同一张银行卡，也可以绑定不同银行卡。</string>
+    <string name="recharge_tip_tow">2、网贷账户的余额可购买网贷产品。</string>
+    <string name="recharge_tip_three">3、财富账户的余额可购买财富产品。</string>
+    <string name="withdrawals_tip_zero">收费规则:"\n"提现费用：单笔提现手续费：2元/笔；</string>
+    <string name="recharge_bank_tip">1、由于存管银行限制，网贷账户当日充值金额 T+1 日后方可提现；</string>
+    <string name="withdrawals_tip_one">2、提现限额：目前单笔提现限额范围是：100元--500000元；</string>
+    <string name="withdrawals_tip_tow">3、提现到帐时间："\n"（1）工作日，5万以下提现实时到账；工作日工作时间（9:00-17:00）5万以上提现，2小时内到账，非工作时间段，5万以上提现t+1个工作日到账；当日充值资金不可当日提现，如需提现一般会于T+1个工作日到账。 因银行周末及节假日不结算资金，双休日及法定节假日暂无法进行提现。"\n"（2） 网银转账后，实际到账时间根据打款银行、地区以及日期（工作日、法定节假日）的不同，到账时间会有所差异，一般到账时间不超过24小时。如有疑问，请直接联系客服。</string>
+    <string name="withdrawals_tip_three">4、您的提现资金将从合作支付公司的监管账户转入您绑定的提现银行卡。</string>
+
+
+
+</resources>

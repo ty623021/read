@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right_12"
+        android:layout_marginRight="@dimen/margin_left_right_12"
+        android:background="@drawable/shape_edit_text_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:background="@drawable/login_phone"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black_text" />
+
+        <com.rongteng.base.weight.EditTextWithDel
+            android:id="@+id/et_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:background="@null"
+            android:hint="请输入手机号码/用户名"
+            android:maxLength="18"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="@dimen/size_sp_12" />
+
+    </LinearLayout>
+
+</LinearLayout>

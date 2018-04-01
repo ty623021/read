@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tv_suContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/banner_height"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/shape_edit_background"
+                    android:gravity="top|left"
+                    android:hint="Hi，你的地盘你做主，欢迎吐槽！"
+                    android:maxLength="1000"
+                    android:minLines="5"
+                    android:padding="@dimen/margin_10"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="@dimen/size_sp_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/shape_edit_text_background"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_60"
+                        android:layout_margin="@dimen/margin_10"
+                        android:columnWidth="20dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:text="请留下手机号/QQ/微信号,以便我们更好的了解您的需求"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/size_sp_micro" />
+
+                    <com.rongteng.base.weight.EditTextWithDel
+                        android:id="@+id/tv_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:background="@drawable/shape_edit_background"
+                        android:hint="请留下手机号/QQ/微信号（选填）"
+                        android:maxLength="11"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingRight="8dp"
+                        android:textSize="@dimen/size_sp_micro" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_40">
+
+                    <Button
+                        android:id="@+id/complete"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/shape_btn_background_radius"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_sp_18" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_gray_background">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="10dp"
+            android:text="的杀手的哈萨克的卡萨就看见"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/size_sp_14" />
+
+        <TextView
+            android:id="@+id/notice_list_tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/right"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_10"
+            android:text="查看详情"
+            android:textColor="@color/text_tip_color"
+            android:textSize="@dimen/size_sp_12" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:text="2016-06-06"
+            android:textColor="@color/text_tip_color"
+            android:textSize="@dimen/size_sp_12" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/view_line_default" />
+</LinearLayout>

@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="@dimen/margin_25"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:text="原登录密码："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_sp_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:background="@drawable/shape_edit_text_background">
+
+                    <com.rongteng.base.weight.EditTextWithDel
+                        android:id="@+id/old_loginPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_marginRight="@dimen/margin_left_right_12"
+                        android:layout_toLeftOf="@+id/eyes_linear"
+                        android:background="@null"
+                        android:hint="@string/hint_pass"
+                        android:maxLength="16"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:password="true"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textSize="@dimen/size_sp_12" />
+
+                    <LinearLayout
+                        android:id="@+id/eyes_linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_set"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/margin_left_right_12"
+                            android:background="@drawable/close_eyes" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="@dimen/dp_7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:text="新登录密码："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_sp_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:background="@drawable/shape_edit_text_background">
+
+                    <com.rongteng.base.weight.EditTextWithDel
+                        android:id="@+id/new_loginPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_marginRight="@dimen/margin_left_right_12"
+                        android:layout_toLeftOf="@+id/eyes_linear1"
+                        android:background="@null"
+                        android:hint="@string/hint_pass"
+                        android:maxLength="16"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:password="true"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textSize="@dimen/size_sp_12" />
+
+                    <LinearLayout
+                        android:id="@+id/eyes_linear1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_set1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/margin_left_right_12"
+                            android:background="@drawable/close_eyes" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginTop="@dimen/dp_7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:text="确认新密码："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_sp_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:background="@drawable/shape_edit_text_background">
+
+                    <com.rongteng.base.weight.EditTextWithDel
+                        android:id="@+id/confirm_new_loginPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_marginRight="@dimen/margin_left_right_12"
+                        android:layout_toLeftOf="@+id/eyes_linear2"
+                        android:background="@null"
+                        android:hint="@string/hint_pass"
+                        android:maxLength="16"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:password="true"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textSize="@dimen/size_sp_12" />
+
+                    <LinearLayout
+                        android:id="@+id/eyes_linear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_set2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/margin_left_right_12"
+                            android:background="@drawable/close_eyes" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginRight="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/shape_btn_background"
+                android:enabled="false"
+                android:text="确认修改"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_15" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

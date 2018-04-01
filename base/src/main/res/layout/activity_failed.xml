@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:background="@drawable/invest_fail" />
+
+        <TextView
+            android:id="@+id/tv_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:layout_marginRight="@dimen/margin_left_right_12"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="投资结果未返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="可能由于网络原因，你的投资结果未返回!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_sp_15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:background="@drawable/layout_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:layout_marginRight="@dimen/margin_left_right_12"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="您可以查看您的投资记录："
+            android:textColor="@color/text_tip_color"
+            android:textSize="@dimen/size_sp_micro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_left_right_12"
+            android:layout_marginRight="@dimen/margin_left_right_12"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="如果有此笔投资记录，那么您此次投资成功；"
+            android:textColor="@color/text_tip_color"
+            android:textSize="@dimen/size_sp_micro" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginLeft="@dimen/margin_left_right_12"
+        android:layout_marginRight="@dimen/margin_left_right_12"
+        android:layout_marginTop="@dimen/margin_60"
+        android:background="@drawable/shape_btn_background_radius"
+        android:text="查看投资记录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_sp_15" />
+
+</LinearLayout>

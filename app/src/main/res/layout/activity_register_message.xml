@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/register_banner_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_banner" />
+
+            <include
+                layout="@layout/edit_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_invitation_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_open" />
+
+                    <TextView
+                        android:id="@+id/invitation_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:text="我有邀请人"
+                        android:textColor="@color/blue_text_color"
+                        android:textSize="@dimen/size_sp_12" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/invitation_code_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_edit_text_background"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@drawable/home_me"
+                        android:gravity="left"
+                        android:textColor="@color/black_text"
+                        android:visibility="gone" />
+
+                    <com.rongteng.base.weight.EditTextWithDel
+                        android:id="@+id/et_invitation_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="邀请码/邀请人手机号码"
+                        android:maxLength="18"
+                        android:paddingRight="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:text="点击“完成”，即表示您同意："
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_sp_13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/register_protocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="《小诸葛金服注册及服务协议》"
+                        android:textColor="@color/blue_text_color"
+                        android:textSize="@dimen/size_sp_13" />
+
+                    <TextView
+                        android:id="@+id/register_risk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:text="、《风险告知书》"
+                        android:textColor="@color/blue_text_color"
+                        android:textSize="@dimen/size_sp_13" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:layout_marginRight="@dimen/margin_left_right_12"
+                android:layout_marginTop="@dimen/margin_30"
+                android:background="@drawable/shape_btn_background"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_15" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/not_sms_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:text="收不到验证码？"
+        android:textColor="@color/blue_text_color"
+        android:textSize="@dimen/size_sp_13" />
+
+</RelativeLayout>

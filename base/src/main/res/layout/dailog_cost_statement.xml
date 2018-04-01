@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:background="@drawable/shape_dialog_cost_statement_top_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/cost_statement" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_25"
+            android:text="费用说明"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_sp_15" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="服务费将在项目封闭期结束后收取，提前退出或到期退出后如实际收益高于预期收益超出部分作为平台服务费由平台收取。"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_sp_13" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_dialog_cost_statement_background"
+        android:gravity="center"
+        android:text="知道了"
+        android:textColor="@color/blue_text_color"
+        android:textSize="@dimen/size_sp_15" />
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <com.rongteng.base.weight.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_banner_height"
+        android:background="@drawable/default_banner" />
+
+    <include
+        layout="@layout/edit_user_phone_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"></include>
+
+    <include
+        layout="@layout/edit_user_pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/remember_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_12"
+                android:button="@drawable/selector_remember_btn"
+                android:checked="true"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="记住帐号"
+                android:textColor="@color/text_color_hint"
+                android:textSize="@dimen/size_sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_left_right_12"
+            android:text="忘记密码？"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/size_sp_12" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_marginLeft="@dimen/margin_left_right_12"
+        android:layout_marginRight="@dimen/margin_left_right_12"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/shape_btn_background"
+        android:enabled="false"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_sp_15" />
+
+
+    <TextView
+        android:id="@+id/register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="免费注册送8888元体验金"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/size_sp_15" />
+</LinearLayout>

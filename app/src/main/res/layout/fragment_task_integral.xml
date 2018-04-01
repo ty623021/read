@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="@color/gray_mall"
+    android:orientation="vertical">
+
+    <com.rongteng.base.pullview.AbPullToRefreshView
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/do_task_item"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_left_right_12"
+                            android:src="@drawable/task_sign" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="每日签到"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/size_sp_12" />
+
+                            <TextView
+                                android:id="@+id/day_sign_integral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:textColor="@color/text_tip_color"
+                                android:textSize="@dimen/size_sp_micro" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/do_sign"
+                        android:layout_width="@dimen/margin_80"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/margin_left_right_12"
+                        android:background="@drawable/shape_task_status"
+                        android:enabled="false"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingRight="@dimen/margin_15"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="签到"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_sp_15" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/do_task_item"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_left_right_12"
+                            android:src="@drawable/task_invite" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="邀请好友注册"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/size_sp_12" />
+
+                            <TextView
+                                android:id="@+id/invate_integral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:textColor="@color/text_tip_color"
+                                android:textSize="@dimen/size_sp_micro" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/do_invate"
+                        android:layout_width="@dimen/margin_80"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/margin_left_right_12"
+                        android:background="@drawable/shape_task_status"
+                        android:enabled="false"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingRight="@dimen/margin_15"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="去邀请"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_sp_15" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_12"
+                    android:layout_marginRight="@dimen/margin_left_right_12"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:background="@drawable/do_task_item"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_left_right_12"
+                            android:src="@drawable/task_register" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="新手注册"
+                                android:textColor="@color/black_text"
+                                android:textSize="@dimen/size_sp_12" />
+
+                            <TextView
+                                android:id="@+id/register_integral"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:textColor="@color/text_tip_color"
+                                android:textSize="@dimen/size_sp_micro" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/do_register"
+                        android:layout_width="@dimen/margin_80"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/margin_left_right_12"
+                        android:background="@drawable/shape_task_status"
+                        android:enabled="false"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingRight="@dimen/margin_15"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="去注册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_sp_15" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </com.rongteng.base.pullview.AbPullToRefreshView>
+
+</LinearLayout>
